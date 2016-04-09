@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.syz.account_management" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mainfunc.AddActivity"
+            android:label="@string/title_activity_add" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.syz.account_management.MainActivity" />
+        </activity>
+        <activity
+            android:name=".mainfunc.EditActivity"
+            android:label="@string/title_activity_edit" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.syz.account_management.MainActivity" />
+        </activity>
+        <activity
+            android:name=".mainfunc.DetailActivity"
+            android:label="@string/title_activity_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.syz.account_management.mainfunc.EditActivity" />
+        </activity>
+        <activity
+            android:name=".mainfunc.MonthStatisticActivity"
+            android:label="@string/title_activity_month_statistic" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.syz.account_management.MainActivity" />
+        </activity>
+        <activity
+            android:name=".mainfunc.YearStatisticActivity"
+            android:label="@string/title_activity_year_statistic" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.syz.account_management.MainActivity" />
+        </activity>
+        <activity
+            android:name=".mainfunc.BudgetActivity"
+            android:label="@string/title_activity_budget" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.syz.account_management.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

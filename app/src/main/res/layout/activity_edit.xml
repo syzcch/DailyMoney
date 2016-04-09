@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.project.syz.account_management.mainfunc.EditActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/checkLine"
+        android:layout_below="@id/dateInfo">
+
+        <TextView android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textSize="16.0sp" android:textColor="#ff8a8f9d"/>
+
+        <RadioGroup android:id="@+id/radioType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10.0dip">
+
+            <RadioButton android:id="@+id/income" android:layout_width="wrap_content" android:text="@string/income" android:layout_height="wrap_content" android:layout_gravity="center" ></RadioButton>
+            <RadioButton android:id="@+id/expenditure" android:layout_width="wrap_content" android:text="@string/expenditure" android:layout_height="wrap_content" android:checked="true" android:layout_gravity="center" ></RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff8a8f9d"
+        android:gravity="center_vertical" android:id="@+id/edit_hint"
+        android:text="@string/edit_hint"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkLine"/>
+
+    <Spinner android:id="@+id/spyear" android:layout_width="wrap_content"
+        android:textColor="#ff9d625e"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_hint" />
+
+    <TextView android:id="@+id/yearInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff8a8f9d"
+        android:text="@string/yearInfo"
+        android:layout_toRightOf="@id/spyear" android:layout_alignTop="@id/spyear"
+        />
+
+    <Spinner android:id="@+id/spmonth" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff9d625e"
+        android:layout_toRightOf="@id/yearInfo" android:layout_alignTop="@id/yearInfo" />
+
+    <TextView android:id="@+id/monthInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff8a8f9d"
+        android:text="@string/monthInfo"
+        android:layout_toRightOf="@id/spmonth" android:layout_alignTop="@id/spmonth"
+        />
+
+    <Button android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:onClick="search"
+        android:layout_below="@id/spyear" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"/>
+
+</RelativeLayout>

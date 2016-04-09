@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.project.syz.account_management.mainfunc.DetailActivity">
+
+    <TextView android:textSize="16.0sp" android:textColor="#ff8a8f9d"
+        android:gravity="center_vertical" android:id="@+id/dateInfo"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/detail_info"/>
+
+    <TextView android:textSize="16.0sp" android:textColor="#ff9d2c98"
+        android:gravity="center_vertical" android:id="@+id/datetype"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dateInfo" android:layout_alignTop="@id/dateInfo"/>
+
+    <TextView android:textSize="16.0sp"
+        android:textColor="#ff8a8f9d"
+        android:id="@+id/categoryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateInfo"
+        android:text="@string/category"/>
+
+    <Spinner android:id="@+id/categorySpin" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries = "@array/expend"
+        android:prompt = "@string/spin_prompt"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@id/categoryInfo" android:layout_alignTop="@id/categoryInfo"/>
+
+    <TextView android:layout_width="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff8a8f9d"
+        android:gravity="center_vertical" android:id="@+id/datetime"
+        android:text="@string/datetime"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryInfo"
+        android:paddingTop="?android:attr/actionBarSize"/>
+
+    <TextView android:id="@+id/recordDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff8a8f9d"
+        android:layout_below="@id/datetime"
+        android:layout_alignParentLeft="true"
+        />
+
+
+    <TextView android:textSize="16.0sp"
+        android:textColor="#ff8a8f9d"
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recordDate"
+        android:text="@string/money"
+        android:paddingTop="?android:attr/actionBarSize"
+        />
+
+    <EditText android:id="@+id/editMoney"
+        android:textSize="16.0sp"
+        android:textColor="#ff8a8f9d"
+        android:numeric="decimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/money_hint"
+        android:layout_toRightOf="@id/money" android:layout_alignTop="@id/money"
+        android:paddingTop="?android:attr/actionBarSize"
+        />
+
+    <TextView android:textSize="16.0sp"
+        android:textColor="#ff8a8f9d"
+        android:id="@+id/memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/money"
+        android:text="@string/memo"
+        android:paddingTop="?android:attr/actionBarSize"
+        />
+
+    <EditText android:id="@+id/editMemo"
+        android:textSize="16.0sp"
+        android:textColor="#ff8a8f9d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/memo_hint"
+        android:maxLength="10"
+        android:paddingTop="?android:attr/actionBarSize"
+        android:layout_toRightOf="@id/memo" android:layout_alignTop="@id/memo"
+        />
+
+    <Button android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:onClick="submit"
+        android:layout_below="@id/editMemo"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"/>
+
+    <Button android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:onClick="delete"
+        android:layout_below="@id/editMemo"
+
+        android:layout_toRightOf="@id/submit" android:layout_alignTop="@id/submit"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"/>
+
+</RelativeLayout>

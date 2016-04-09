@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"DailyMoney "</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="deledit">Del/Edit</string>
+    <string name="check">ExpTimeLine</string>
+    <string name="monthstatistics">MonthStatistics</string>
+    <string name="yearstatistics">YearStatistics</string>
+    <string name="finance">Finance</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="action_gone">Exit</string>
+    <string name="welInfo">Please input all info</string>
+    <string name="income">Income</string>
+    <string name="expenditure">Expenditure</string>
+    <string name="category">Category:</string>
+    <string name="type">Income/Expenditure:</string>
+    <string name="money">Money:</string>
+    <string name="memo">Memo:</string>
+    <string name="money_hint">Input money with 2 digits after the decimal point($)</string>
+    <string name="memo_hint">Input memo with at most 100 characters</string>
+    <string name="spin_prompt"> Choose Type </string>
+
+    <string-array name="expend">
+        <item>living goods</item>
+        <item>tuition</item>
+        <item>appliance/furniture</item>
+        <item>traffic</item>
+        <item>repayment/rent</item>
+        <item>medicine</item>
+        <item>food/beverage</item>
+        <item>recreation</item>
+        <item>gift</item>
+        <item>others</item>
+    </string-array>
+    <string-array name="income">
+        <item>salary</item>
+        <item>stock/Dividend</item>
+        <item>bonus</item>
+        <item>rent</item>
+        <item>interest</item>
+        <item>others</item>
+    </string-array>
+
+    <string name="submit">Submit</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="balanceText">Balance Today($):</string>
+    <string name="edit_hint">Input year and month to search:</string>
+    <string name="yearInfo">Year</string>
+    <string name="monthInfo">Month</string>
+    <string name="dayInfo">Day</string>
+    <string name="search">Search</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="detail_info">Detailed info for a record of  </string>
+    <string name="datetime">Record date:</string>
+    <string name="title_activity_month_statistic">MonthStatisticActivity</string>
+    <string name="totalIncome">Income($): </string>
+    <string name="totalExpenditure">Expenditure($): </string>
+    <string name="balanceMonth">Balance($): </string>
+    <string name="detailIncome">Detail Income</string>
+    <string name="detailExpenditure">Detail Expend</string>
+    <string name="lineChart">LineChart</string>
+    <string name="title_activity_year_statistic">YearStatisticActivity</string>
+    <string name="hello_blank_fragment">Click Button to Show Graphic Statistics</string>
+    <string name="title_activity_budget">BudgetActivity</string>
+
+</resources>

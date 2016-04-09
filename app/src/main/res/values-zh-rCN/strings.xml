@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"记帐本"</string>
+    <string name="action_settings">设置</string>
+    <string name="add">添加</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="deledit">删除/编辑</string>
+    <string name="check">花费时间轴</string>
+    <string name="monthstatistics">月度统计</string>
+    <string name="yearstatistics">年度统计</string>
+    <string name="finance">理财</string>
+    <string name="about">关于</string>
+    <string name="exit">退出</string>
+    <string name="title_activity_add">添加记账</string>
+    <string name="action_gone">退出</string>
+    <string name="welInfo">请输入如下信息</string>
+    <string name="income">收入</string>
+    <string name="expenditure">支出</string>
+    <string name="category">类别:</string>
+    <string name="type">收入/支出:</string>
+    <string name="money">金额:</string>
+    <string name="memo">备注:</string>
+    <string name="money_hint">输入金额并保留小数点2位(￥)</string>
+    <string name="memo_hint">请输入备注</string>
+    <string name="spin_prompt"> 选择类别 </string>
+
+    <string-array name="expend">
+        <item>生活用品</item>
+        <item>学费</item>
+        <item>家具/家电</item>
+        <item>交通类</item>
+        <item>还款/房租等</item>
+        <item>医疗</item>
+        <item>食品/饮料</item>
+        <item>娱乐</item>
+        <item>礼物</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="income">
+        <item>工资</item>
+        <item>股票/分红</item>
+        <item>奖金</item>
+        <item>房租</item>
+        <item>利息</item>
+        <item>其他</item>
+    </string-array>
+
+    <string name="submit">提交</string>
+    <string name="title_activity_edit">编辑记账</string>
+    <string name="balanceText">当天结余(￥):</string>
+    <string name="edit_hint">输入年月来查询:</string>
+    <string name="yearInfo">年</string>
+    <string name="monthInfo">月</string>
+    <string name="dayInfo">日</string>
+    <string name="search">搜索</string>
+    <string name="title_activity_detail">记账详细信息</string>
+    <string name="detail_info">一条记录的详细信息  </string>
+    <string name="datetime">记录的日期:</string>
+    <string name="title_activity_month_statistic">月统计信息</string>
+    <string name="totalIncome">收入(￥): </string>
+    <string name="totalExpenditure">支出(￥): </string>
+    <string name="balanceMonth">结余(￥): </string>
+    <string name="detailIncome">收入细节</string>
+    <string name="detailExpenditure">支出细节</string>
+    <string name="lineChart">时间轴</string>
+    <string name="title_activity_year_statistic">年统计信息</string>
+    <string name="hello_blank_fragment">单击显示图标统计</string>
+    <string name="title_activity_budget">时间轴查看</string>
+
+</resources>

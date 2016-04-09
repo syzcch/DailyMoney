@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Spinner android:id="@+id/spyear"
+        android:textColor="#ff9d625e"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <TextView android:id="@+id/yearInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff7b9d5f"
+        android:text="@string/yearInfo"
+        android:layout_toRightOf="@id/spyear" android:layout_alignTop="@id/spyear"
+        />
+
+    <Spinner android:id="@+id/spmonth" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff9d625e"
+        android:layout_toRightOf="@id/yearInfo" android:layout_alignTop="@id/yearInfo" />
+
+    <TextView android:id="@+id/monthInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff7b9d5f"
+        android:text="@string/monthInfo"
+        android:layout_toRightOf="@id/spmonth" android:layout_alignTop="@id/spmonth"
+        />
+
+    <Button android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:onClick="search"
+        android:layout_below="@id/spyear" />
+
+    <Button android:id="@+id/detailIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detailIncome"
+        android:onClick="detailIncome"
+        android:layout_toRightOf="@id/search" android:layout_alignTop="@id/search"/>
+
+    <Button android:id="@+id/detailExpenditure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detailExpenditure"
+        android:onClick="detailExpenditure"
+        android:layout_toRightOf="@id/detailIncome" android:layout_alignTop="@id/detailIncome"/>
+
+    <TextView android:id="@+id/totalIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff7b9d5f"
+        android:text="@string/totalIncome"
+        android:layout_below="@id/search"
+        />
+
+    <TextView android:id="@+id/income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff7b9d5f"
+        android:text="0.0"
+        android:layout_toRightOf="@id/totalIncome" android:layout_alignTop="@id/totalIncome"
+        />
+
+    <TextView android:id="@+id/totalExpenditure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff7b9d5f"
+        android:text="@string/totalExpenditure"
+        android:layout_toRightOf="@id/income" android:layout_alignTop="@id/income"
+        android:layout_marginLeft="10.0dip"
+        />
+
+    <TextView android:id="@+id/expenditure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff7b9d5f"
+        android:text="0.0"
+        android:layout_toRightOf="@id/totalExpenditure" android:layout_alignTop="@id/totalExpenditure"
+        />
+
+    <TextView android:id="@+id/balanceMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff7b9d5f"
+        android:text="@string/balanceMonth"
+        android:layout_below="@id/totalIncome"
+        />
+
+    <TextView android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16.0sp" android:textColor="#ff7b9d5f"
+        android:text="0.0"
+        android:layout_toRightOf="@id/balanceMonth" android:layout_alignTop="@id/balanceMonth"
+        />
+
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        tools:context="com.project.syz.account_management.mainfunc.MonthStatisticActivity"
+        tools:ignore="MergeRootFrame"
+        android:layout_below="@+id/balanceMonth"/>
+
+</RelativeLayout>
