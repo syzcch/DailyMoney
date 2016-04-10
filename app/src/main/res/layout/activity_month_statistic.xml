@@ -36,21 +36,26 @@
         android:layout_height="wrap_content"
         android:text="@string/search"
         android:onClick="search"
-        android:layout_below="@id/spyear" />
+        android:layout_below="@id/spyear"
+        android:background="@drawable/shape"/>
 
     <Button android:id="@+id/detailIncome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/detailIncome"
         android:onClick="detailIncome"
-        android:layout_toRightOf="@id/search" android:layout_alignTop="@id/search"/>
+        android:layout_toRightOf="@id/search" android:layout_alignTop="@id/search"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="@dimen/abc_action_bar_content_inset_material"/>
 
     <Button android:id="@+id/detailExpenditure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/detailExpenditure"
         android:onClick="detailExpenditure"
-        android:layout_toRightOf="@id/detailIncome" android:layout_alignTop="@id/detailIncome"/>
+        android:layout_toRightOf="@id/detailIncome" android:layout_alignTop="@id/detailIncome"
+        android:background="@drawable/shape"
+        android:layout_marginLeft="@dimen/abc_action_bar_content_inset_material"/>
 
     <TextView android:id="@+id/totalIncome"
         android:layout_width="wrap_content"

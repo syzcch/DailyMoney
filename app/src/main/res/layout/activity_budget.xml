@@ -37,7 +37,8 @@
         android:layout_height="wrap_content"
         android:text="@string/search"
         android:onClick="search"
-        android:layout_below="@id/spyear" />
+        android:layout_below="@id/spyear"
+        android:background="@drawable/shape"/>
 
 
     <ListView

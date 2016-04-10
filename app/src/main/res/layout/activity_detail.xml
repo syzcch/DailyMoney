@@ -99,7 +99,8 @@
         android:text="@string/submit"
         android:onClick="submit"
         android:layout_below="@id/editMemo"
-        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"/>
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"
+        android:background="@drawable/shape"/>
 
     <Button android:id="@+id/delete"
         android:layout_width="wrap_content"
@@ -107,8 +108,7 @@
         android:text="@string/delete"
         android:onClick="delete"
         android:layout_below="@id/editMemo"
-
-        android:layout_toRightOf="@id/submit" android:layout_alignTop="@id/submit"
-        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"/>
+        android:background="@drawable/shape"
+        android:layout_toRightOf="@id/submit" android:layout_alignTop="@id/submit"/>
 
 </RelativeLayout>
