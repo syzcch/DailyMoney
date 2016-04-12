@@ -10,6 +10,7 @@
         android:paddingTop="10dp" >
 
         <ImageView
+            android:id="@+id/bgPic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -25,6 +26,15 @@
             android:textColor="#FC6802" />
     </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/v_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fffc79bb"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/rl_title"
+        />
+
     <TextView
         android:id="@+id/txt_date_content"
         android:layout_width="wrap_content"
@@ -32,7 +42,8 @@
         android:layout_below="@id/rl_title"
         android:layout_marginLeft="15dp"
         android:paddingBottom="10dp"
-        android:textColor="#5296C5" />
+        android:textColor="#5296C5"
+        android:layout_toRightOf="@id/v_icon" android:layout_alignTop="@id/v_icon"/>
 
     <View
         android:id="@+id/v_line"

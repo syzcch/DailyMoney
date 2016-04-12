@@ -58,6 +58,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.project.syz.account_management.MainActivity" />
         </activity>
+        <activity
+            android:name=".mainfunc.AboutActivity"
+            android:label="@string/title_activity_about" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.syz.account_management.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

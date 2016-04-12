@@ -109,6 +109,7 @@
         android:onClick="delete"
         android:layout_below="@id/editMemo"
         android:background="@drawable/shape"
-        android:layout_toRightOf="@id/submit" android:layout_alignTop="@id/submit"/>
+        android:layout_toRightOf="@id/submit" android:layout_alignTop="@id/submit"
+        android:layout_marginLeft="@dimen/abc_action_bar_content_inset_material"/>
 
 </RelativeLayout>

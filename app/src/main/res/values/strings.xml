@@ -69,5 +69,8 @@
     <string name="title_activity_year_statistic">YearStatisticActivity</string>
     <string name="hello_blank_fragment">Click Button to Show Graphic Statistics</string>
     <string name="title_activity_budget">BudgetActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="welcome">Welcome to using this Daily Money</string>
+    <string name="aboutApp">This free app is made by Roger Song, thank you for using it!</string>
 
 </resources>

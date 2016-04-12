@@ -20,21 +20,21 @@
 
     <Button android:id="@+id/search"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="@string/search"
         android:onClick="search"
         android:layout_toRightOf="@id/yearInfo" android:layout_alignTop="@id/yearInfo"
-        android:background="@drawable/shape"/>
+        android:background="@drawable/shape"
+        android:layout_marginLeft="10dp"/>
 
     <Button android:id="@+id/detailIncome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/detailIncome"
         android:onClick="detailIncome"
-        android:layout_marginTop="15.0dip"
+        android:layout_marginTop="20.0dip"
         android:layout_below="@id/spyear"
-        android:background="@drawable/shape"
-        android:layout_marginLeft="@dimen/abc_action_bar_content_inset_material"/>
+        android:background="@drawable/shape"/>
 
     <Button android:id="@+id/detailExpenditure"
         android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
         android:layout_toRightOf="@id/detailIncome" android:layout_alignTop="@id/detailIncome"
         android:background="@drawable/shape"
         android:layout_marginLeft="@dimen/abc_action_bar_content_inset_material"
-        android:layout_marginTop="12dp"/>
+        />
 
     <Button android:id="@+id/lineChart"
         android:layout_width="wrap_content"

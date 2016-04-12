@@ -14,6 +14,7 @@ import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.project.syz.account_management.database.DBHelper;
+import com.project.syz.account_management.mainfunc.AboutActivity;
 import com.project.syz.account_management.mainfunc.AddActivity;
 import com.project.syz.account_management.mainfunc.BudgetActivity;
 import com.project.syz.account_management.mainfunc.EditActivity;
@@ -75,8 +76,8 @@ public class MainActivity extends ActionBarActivity {
     private void setGridView() {
         images=new int[]{R.drawable.btn, R.drawable.btn_edit,
                 R.drawable.btn_check, R.drawable.btn_monthstatistics,
-                R.drawable.btn_yearstatistics,R.drawable.btn,
-                R.drawable.btn,R.drawable.btn};
+                R.drawable.btn_yearstatistics,R.drawable.btn_finance,
+                R.drawable.btn_about,R.drawable.btn_exit};
         texts = new String[]{ getString(R.string.add), getString(R.string.deledit),
                 getString(R.string.check), getString(R.string.monthstatistics),getString(R.string.yearstatistics),
                 getString(R.string.finance), getString(R.string.about),
@@ -150,6 +151,15 @@ public class MainActivity extends ActionBarActivity {
                     break;
                 case R.drawable.btn_yearstatistics:
                     startActivity(new Intent(MainActivity.this, YearStatisticActivity.class));//启动另一个Activity
+                    break;
+                case R.drawable.btn_finance:
+                    break;
+                case R.drawable.btn_about:
+                    startActivity(new Intent(MainActivity.this, AboutActivity.class));//启动另一个Activity
+                    break;
+                case R.drawable.btn_exit:
+                    finish();
+                    System.exit(0);
                     break;
             }
 

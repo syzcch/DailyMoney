@@ -45,6 +45,7 @@ public class BudgetActivity extends ActionBarActivity {
         dbhelper = DBHelper.getInstance();
         lvList = (ListView) findViewById(R.id.lv_list);
         dxlist = new ArrayList<DateText>();
+        adapter = new DateAdapter(this, dxlist);
 
         setBudgetInfo();
     }
@@ -109,6 +110,9 @@ public class BudgetActivity extends ActionBarActivity {
         float money;
         String time,type,dxStr;
 
+        dxlist.removeAll(dxlist);
+        adapter.notifyDataSetChanged();
+
         yearmonthStr = spyear.getSelectedItem().toString() + "-" + spmonth.getSelectedItem().toString();
         sql = "select time,money,type from expenditure where substr(time,1,7) = '" + yearmonthStr +"' order by time";
         cursor_income = dbhelper.QueryBySql(sql);
@@ -117,10 +121,11 @@ public class BudgetActivity extends ActionBarActivity {
             money = cursor_income.getFloat(1);
             type = cursor_income.getString(2);
             dxStr = "spending " + String.valueOf(money) + "$  type is " + type;
-            DateText dt = new DateText(time,dxStr);
+            DateText dt = new DateText(time,dxStr,type);
             dxlist.add(dt);
         }
-        adapter = new DateAdapter(this, dxlist);
+        adapter.setList(dxlist);
+//        adapter = new DateAdapter(this, dxlist);
         lvList.setAdapter(adapter);
     }
 
