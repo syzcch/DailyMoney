@@ -68,7 +68,7 @@
     <string name="title_activity_year_statistic">年统计信息</string>
     <string name="hello_blank_fragment">单击显示图标统计</string>
     <string name="title_activity_budget">时间轴查看</string>
-    <string name="welcome">欢迎使用本记帐本！</string>
+    <string name="welcome">欢迎使用记帐本！</string>
     <string name="aboutApp">这款免费的APP是Roger Song制作的，感谢您的使用！</string>
-
+    <string name="title_activity_about">关于本APP</string>
 </resources>
