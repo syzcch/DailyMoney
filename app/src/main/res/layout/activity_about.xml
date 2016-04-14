@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.project.syz.account_management.mainfunc.AboutActivity"
-    android:background="@drawable/caishen"
+    android:background="@drawable/back1"
     android:alpha="50">
 
     <TextView

@@ -42,7 +42,7 @@
         android:layout_below="@id/rl_title"
         android:layout_marginLeft="15dp"
         android:paddingBottom="10dp"
-        android:textColor="#5296C5"
+        android:textColor="#fffc280a"
         android:layout_toRightOf="@id/v_icon" android:layout_alignTop="@id/v_icon"/>
 
     <View
