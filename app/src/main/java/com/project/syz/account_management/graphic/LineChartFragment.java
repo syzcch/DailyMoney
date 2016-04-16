@@ -89,13 +89,13 @@ public class LineChartFragment extends Fragment {
         mRenderer.setOrientation(XYMultipleSeriesRenderer.Orientation.HORIZONTAL);
         mRenderer.setXTitle("Date");//设置为X轴的标题
         mRenderer.setYTitle("Money");//设置y轴的标题
-        mRenderer.setAxisTitleTextSize(30);//设置轴标题文本大小
+        mRenderer.setAxisTitleTextSize(15);//设置轴标题文本大小
         mRenderer.setChartTitle("Money per Month");//设置图表标题
         mRenderer.setZoomButtonsVisible(true);//设置显示放大缩小按钮
         mRenderer.setZoomEnabled(true);//设置不允许放大缩小.
-        mRenderer.setChartTitleTextSize(30);//设置图表标题文字的大小
-        mRenderer.setLabelsTextSize(20);//设置标签的文字大小
-        mRenderer.setLegendTextSize(20);//设置图例文本大小
+        mRenderer.setChartTitleTextSize(15);//设置图表标题文字的大小
+        mRenderer.setLabelsTextSize(10);//设置标签的文字大小
+        mRenderer.setLegendTextSize(10);//设置图例文本大小
         mRenderer.setPointSize(10f);//设置点的大小
         mRenderer.setYAxisMin(0);//设置y轴最小值是0
 //        mRenderer.setYAxisMax(15);
@@ -124,7 +124,7 @@ public class LineChartFragment extends Fragment {
         rIncome.setFillPoints(true);//填充点（显示的点是空心还是实心）
         rIncome.setDisplayChartValues(true);//将点的值显示出来
         rIncome.setChartValuesSpacing(10);//显示的点的值与图的距离
-        rIncome.setChartValuesTextSize(25);//点的值的文字大小
+        rIncome.setChartValuesTextSize(15);//点的值的文字大小
 
         //  r.setFillBelowLine(true);//是否填充折线图的下方
         //  r.setFillBelowLineColor(Color.GREEN);//填充的颜色，如果不设置就默认与线的颜色一致
@@ -138,7 +138,7 @@ public class LineChartFragment extends Fragment {
         rExpend.setFillPoints(true);//填充点（显示的点是空心还是实心）
         rExpend.setDisplayChartValues(true);//将点的值显示出来
         rExpend.setChartValuesSpacing(10);//显示的点的值与图的距离
-        rExpend.setChartValuesTextSize(25);//点的值的文字大小
+        rExpend.setChartValuesTextSize(15);//点的值的文字大小
 
         //  rTwo.setFillBelowLine(true);//是否填充折线图的下方
         //  rTwo.setFillBelowLineColor(Color.GREEN);//填充的颜色，如果不设置就默认与线的颜色一致

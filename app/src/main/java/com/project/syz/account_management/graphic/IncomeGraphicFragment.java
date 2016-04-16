@@ -92,12 +92,12 @@ public class IncomeGraphicFragment extends Fragment {
     protected DefaultRenderer buildCategoryRenderer(int[] colors) {
         DefaultRenderer renderer = new DefaultRenderer();
 
-        renderer.setLegendTextSize(30);//设置左下角表注的文字大小
+        renderer.setLegendTextSize(15);//设置左下角表注的文字大小
         renderer.setZoomButtonsVisible(true);//设置显示放大缩小按钮
         renderer.setZoomEnabled(true);//设置不允许放大缩小.
-        renderer.setChartTitleTextSize(40);//设置图表标题的文字大小
+        renderer.setChartTitleTextSize(20);//设置图表标题的文字大小
         renderer.setChartTitle("统计结果");//设置图表的标题  默认是居中顶部显示
-        renderer.setLabelsTextSize(30);//饼图上标记文字的字体大小
+        renderer.setLabelsTextSize(15);//饼图上标记文字的字体大小
         //renderer.setLabelsColor(Color.WHITE);//饼图上标记文字的颜色
         renderer.setPanEnabled(false);//设置是否可以平移
         renderer.setDisplayValues(true);//是否显示值
