@@ -16,6 +16,7 @@
 minSdkVersion 15
 
 This is a easy-to-use  money management APP, includes some features:
+
 1. Expenditure and income on that day. expenditure and income have different types of classification.
 2. Showing expenditure of one month by timeline, so it's show where their money goes intuitively.
 3. Providing edit and delete function for historical Expenditure and income.
