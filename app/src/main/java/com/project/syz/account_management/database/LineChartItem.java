@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Arrays;
 
 /**
- * Created by 2 on 2016/4/6.
+ * Created by Roger on 2016/4/6.
  */
 public class LineChartItem implements Serializable {
     float income[];

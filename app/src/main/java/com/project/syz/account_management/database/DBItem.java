@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by 2 on 2016/3/30.
+ * Created by Roger on 2016/3/30.
  */
 public class DBItem implements Parcelable {
     private int _id;

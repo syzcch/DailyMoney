@@ -3,7 +3,7 @@ package com.project.syz.account_management.database;
 import com.project.syz.account_management.R;
 
 /**
- * Created by 2 on 2016/4/8.
+ * Created by Roger on 2016/4/8.
  */
 public class DateText {
     private String date;

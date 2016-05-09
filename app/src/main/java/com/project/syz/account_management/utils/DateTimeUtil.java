@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.text.SimpleDateFormat;
 
 /**
- * Created by 2 on 2016/4/8.
+ * Created by Roger on 2016/4/8.
  */
 public class DateTimeUtil {
     public static int getCurrentMonth(){
